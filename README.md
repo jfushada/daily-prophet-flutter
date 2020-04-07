@@ -1,6 +1,6 @@
 # daily_prophet_flutter
 
-A new Flutter project.
+A new Flutter project, used mainly to try out unit tests and widget tests.
 
 ## Getting Started
 
