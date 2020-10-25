@@ -2,6 +2,12 @@
 
 A new Flutter project, used mainly to try out unit tests and widget tests.
 
+All it has is a splash screen, and a news list that has two tabs, one for most popular news and the other for Liverpool FC news. I use https://newsapi.org/ to fetch the news data.
+Both tabs just show a list of article headlines, and there’s a colour transition in between the tab titles, and when you click on them, the tile expands to show a launch icon, which is supposed to link to the article itself, but I haven't implemented it (lol).
+
+
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
