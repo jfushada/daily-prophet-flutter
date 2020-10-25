@@ -1,6 +1,25 @@
 import 'package:test/test.dart';
 import 'package:daily_prophet_flutter/features/news/models/article.dart';
 
+/// Unit tests are for verifying the behavior of a single function, method, or class. 
+/// The test package, which you have to add in pubspec.yaml, provides the core framework for writing unit tests
+/// The flutter_test package provides additional utilities for testing widgets.
+
+/// A test file is basically a file that ends in underscore test dot dart, and in it you have a main function. 
+/// Inside the main function, you have a test title, which describes what you want to test, and you give code for whatever you want to do. 
+/// Basically, you have a lot of expect statements.
+
+/// If you want to run a test, you simply do flutter test in the terminal.
+/// You can also run the test on vscode, with the flutter extension.
+
+/// This test simply checks the json parsing library.
+/// in the Article model, I have a function that parses article ids - I get a json string, which is an array of article ids, and I return it as a list of ints after parsing it. 
+/// In the unit test, I have a test json string, and I feed it through the parseArticleIds function, and what I’m expecting here is that the first element will be 17238241, as an integer. 
+
+/// So this code would catch errors like oh you haven’t updated the de-serializer code to the latest json, for example, or if you pass in an unexpected value.
+
+
+
 void main() {
   test("parse article ids", () {
     const jsonString =
