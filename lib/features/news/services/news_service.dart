@@ -10,7 +10,7 @@ class NewsService {
 
   Future<NewsResponse> topNewsList(Client client) async {
     Response response = await client.get(
-      '$baseUrl/top-headlines?country=us&apiKey=$apiKey',
+      Uri.parse('$baseUrl/top-headlines?country=us&apiKey=$apiKey'),
     );
 
     if (response.statusCode == 200) {
@@ -22,7 +22,7 @@ class NewsService {
 
   Future<NewsResponse> liverpoolNewsList(Client client) async {
     Response response = await client.get(
-      '$baseUrl/everything?q=liverpool&apiKey=$apiKey',
+      Uri.parse('$baseUrl/everything?q=liverpool&apiKey=$apiKey'),
     );
 
     if (response.statusCode == 200) {
