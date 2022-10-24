@@ -1,4 +1,4 @@
-import 'package:flushbar/flushbar_helper.dart';
+import 'package:another_flushbar/flushbar_helper.dart';
 import 'package:flutter/material.dart';
 
 class CommonStore {
